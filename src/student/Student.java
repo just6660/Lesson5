@@ -66,6 +66,21 @@ public class Student {
         return high;
 
     }
+    
+    public String validateData(){
+        String em = null;
+        if(name.equals(""))
+            em = "Name is required.";
+        if(test1<0||test1>100||test2<0||test2>100||test3<0||test3>100)
+            if(em==null)
+                em = "At least 1 mark is out of the acceptable range";
+            else
+                em+="\nAt least 1 mark is out of the acceptable range";
+        if(em!=null)
+            em+="\nPlease re-enter all the data\n";
+        return em;
+            
+    }
 
     public String toString() {
         String str;
