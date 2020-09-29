@@ -63,6 +63,7 @@ public class StudentInterface {
         }
         
         highestscore = Math.max(stu1.getHighScore(),stu2.getHighScore());
+        highestaverage = Math.max(stu1.getAverage(),stu2.getAverage());
         
             
         System.out.println("\n--------------------------------------\n");
@@ -71,9 +72,13 @@ public class StudentInterface {
         System.out.print("\n");
         System.out.println(stu2+"\n");
         if(stu1.getHighScore()==highestscore)
-            System.out.format("%s had the highest score with a score of %d",stu1.getName(),highestscore);
+            System.out.format("%s had the highest score with a score of %d\n",stu1.getName(),highestscore);
         if(stu2.getHighScore()==highestscore)
-            System.out.format("%s had the highest score with a score of %d",stu2.getName(),highestscore);
+            System.out.format("%s had the highest score with a score of %d\n",stu2.getName(),highestscore);
+        if(stu1.getAverage() == highestaverage)
+            System.out.format("%s had the highest average with an average of %.2f\n",stu1.getName(),highestaverage);
+        if(stu2.getAverage() == highestaverage)
+            System.out.format("%s had the highest average with an average of %.2f\n",stu2.getName(),highestaverage);
         System.out.println("\n");
     }
     
