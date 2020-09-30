@@ -71,14 +71,20 @@ public class StudentInterface {
         System.out.println(stu1);
         System.out.print("\n");
         System.out.println(stu2+"\n");
-        if(stu1.getHighScore()==highestscore)
+        if(stu1.getHighScore()==stu2.getHighScore())
+            System.out.format("Both students had a high score of %d\n",highestscore);
+        else if(stu1.getHighScore()==highestscore)
             System.out.format("%s had the highest score with a score of %d\n",stu1.getName(),highestscore);
-        if(stu2.getHighScore()==highestscore)
+        else if(stu2.getHighScore()==highestscore)
             System.out.format("%s had the highest score with a score of %d\n",stu2.getName(),highestscore);
-        if(stu1.getAverage() == highestaverage)
+        
+        if(stu1.getAverage() == stu2.getAverage())
+            System.out.format("Both students had the same average of %.2f\n",highestaverage);
+        else if(stu1.getAverage() == highestaverage)
             System.out.format("%s had the highest average with an average of %.2f\n",stu1.getName(),highestaverage);
-        if(stu2.getAverage() == highestaverage)
+        else if(stu2.getAverage() == highestaverage)
             System.out.format("%s had the highest average with an average of %.2f\n",stu2.getName(),highestaverage);
+        
         System.out.println("\n");
     }
     
