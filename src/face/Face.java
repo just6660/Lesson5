@@ -99,8 +99,8 @@ public class Face {
         diameter = d;
     }
     
-    public void toggleMood(boolean h){
-        isHappy = h;
+    public void toggleMood(){
+        isHappy = !isHappy; 
     }
     
 

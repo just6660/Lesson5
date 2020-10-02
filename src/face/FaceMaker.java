@@ -156,10 +156,9 @@ public class FaceMaker extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
 
-        boolean newh = Boolean.parseBoolean(JOptionPane.showInputDialog(this, "Is the face happy? Enter true or false"));
 
         f.erase();
-        f.toggleMood(newh);
+        f.toggleMood();
         f.draw();
 
     }//GEN-LAST:event_jButton4ActionPerformed
